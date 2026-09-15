@@ -1,0 +1,14 @@
+CREATE TABLE employee (
+    emp_id        NUMBER PRIMARY KEY,
+    first_name    VARCHAR2(50),
+    last_name     VARCHAR2(50),
+    department_id NUMBER,
+    salary        NUMBER(10,2)
+);
+
+INSERT INTO employee VALUES (101, 'John', 'Doe', 10, 50000.00);
+INSERT INTO employee VALUES (102, 'Jane', 'Smith', 20, 60000.00);
+INSERT INTO employee VALUES (103, 'Bob', 'Johnson', 20, 55000.00);
+INSERT INTO employee VALUES (104, 'Alice', 'Brown', 30, 70000.00);
+
+COMMIT;

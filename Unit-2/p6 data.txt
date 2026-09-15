@@ -1,0 +1,24 @@
+-- Create the source table
+CREATE TABLE employees (
+    employee_id   NUMBER(6) PRIMARY KEY,
+    first_name    VARCHAR2(20),
+    last_name     VARCHAR2(25) NOT NULL,
+    email         VARCHAR2(25) NOT NULL,
+    hire_date     DATE NOT NULL,
+    job_id        VARCHAR2(10) NOT NULL,
+    salary        NUMBER(8,2),
+    department_id NUMBER(4)
+);
+
+-- Create the backup table (empty initially)
+CREATE TABLE emp_backup AS SELECT * FROM employees WHERE 1=0;
+
+
+INSERT INTO employees VALUES (100, 'Steven', 'King', 'SKING', TO_DATE('17-JUN-2021', 'DD-MON-YYYY'), 'AD_PRES', 24000, 10);
+INSERT INTO employees VALUES (101, 'Neena', 'Kochhar', 'NKOCHHAR', TO_DATE('21-SEP-2023', 'DD-MON-YYYY'), 'AD_VP', 17000, 10);
+INSERT INTO employees VALUES (102, 'Lex', 'De Haan', 'LDEHAAN', TO_DATE('13-JAN-2021', 'DD-MON-YYYY'), 'AD_VP', 17000, 10);
+INSERT INTO employees VALUES (201, 'Michael', 'Hartstein', 'MHARTSTE', TO_DATE('17-FEB-2024', 'DD-MON-YYYY'), 'MK_MAN', 13000, 20);
+INSERT INTO employees VALUES (202, 'Pat', 'Fay', 'PFAY', TO_DATE('17-AUG-2025', 'DD-MON-YYYY'), 'MK_REP', 6000, 20);
+INSERT INTO employees VALUES (114, 'Den', 'Raphaely', 'DRAPHEAL', TO_DATE('07-DEC-2022', 'DD-MON-YYYY'), 'PU_MAN', 11000, 30);
+
+COMMIT;

@@ -1,0 +1,14 @@
+CREATE TABLE employees (
+   employee_id NUMBER,
+   first_name VARCHAR2(50),
+   job_id VARCHAR2(20),
+   salary NUMBER
+);
+
+INSERT INTO employees VALUES (101, 'Alice', 'IT_PROG', 8000);
+INSERT INTO employees VALUES (102, 'Bob', 'HR_REP', 5000);
+INSERT INTO employees VALUES (103, 'Amanda', 'MK_REP', 5500);
+INSERT INTO employees VALUES (104, 'Charlie', 'IT_PROG', 9000);
+INSERT INTO employees VALUES (105, 'Arthur', 'FI_MGR', 11000);
+
+COMMIT;

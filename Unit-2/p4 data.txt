@@ -1,0 +1,16 @@
+CREATE TABLE emp (
+    empno     NUMBER(4) PRIMARY KEY,
+    ename     VARCHAR2(50),
+    basic_sal NUMBER(10,2)
+);
+
+INSERT INTO emp VALUES (101, 'King', 5000.00);
+INSERT INTO emp VALUES (102, 'Blake', 2850.00);
+INSERT INTO emp VALUES (103, 'Clark', 2450.00);
+INSERT INTO emp VALUES (104, 'Jones', 2975.00);
+INSERT INTO emp VALUES (105, 'Scott', 3000.00);
+INSERT INTO emp VALUES (106, 'Ford', 3000.00);
+INSERT INTO emp VALUES (107, 'Smith', 800.00);
+INSERT INTO emp VALUES (108, 'Allen', 1600.00);
+
+COMMIT;

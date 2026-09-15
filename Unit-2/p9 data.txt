@@ -1,0 +1,16 @@
+-- 1. Create the sample table
+CREATE TABLE employees (
+    employee_id NUMBER PRIMARY KEY,
+    first_name  VARCHAR2(50),
+    salary      NUMBER(10, 2)
+);
+
+-- 2. Insert sample records
+INSERT INTO employees VALUES (101, 'Alice', 75000.00);
+INSERT INTO employees VALUES (102, 'David', 45000.00);
+INSERT INTO employees VALUES (103, 'Charlie', 95000.00);
+INSERT INTO employees VALUES (104, 'Bob', 60000.00);
+INSERT INTO employees VALUES (105, 'Eva', 110000.00);
+
+-- 3. Commit transactions to save changes
+COMMIT;

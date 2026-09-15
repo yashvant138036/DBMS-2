@@ -1,0 +1,8 @@
+CREATE TABLE employees (    employee_id   NUMBER(6) PRIMARY KEY,    first_name    VARCHAR2(20),    last_name     VARCHAR2(25) NOT NULL,    email         VARCHAR2(25) NOT NULL,    hire_date     DATE NOT NULL,    job_id        VARCHAR2(10) NOT NULL,    salary        NUMBER(8,2));
+
+INSERT INTO employees VALUES (100, 'Steven', 'King', 'SKING', TO_DATE('2003-06-17', 'YYYY-MM-DD'), 'AD_PRES', 24000);
+INSERT INTO employees VALUES (101, 'Neena', 'Kochhar', 'NKOCHHAR', TO_DATE('2005-09-21', 'YYYY-MM-DD'), 'AD_VP', 17000);
+INSERT INTO employees VALUES (102, 'Lex', 'De Haan', 'LDEHAAN', TO_DATE('2001-01-13', 'YYYY-MM-DD'), 'AD_VP', 17000);
+INSERT INTO employees VALUES (103, 'Alexander', 'Hunold', 'AHUNOLD', TO_DATE('2006-01-03', 'YYYY-MM-DD'), 'IT_PROG', 9000);
+INSERT INTO employees VALUES (104, 'Bruce', 'Ernst', 'BERNST', TO_DATE('2007-05-21', 'YYYY-MM-DD'), 'IT_PROG', 6000);
+COMMIT;

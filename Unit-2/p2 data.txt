@@ -1,0 +1,21 @@
+-- Create the main Employee table
+CREATE TABLE emp (
+    empno NUMBER PRIMARY KEY,
+    ename VARCHAR2(50),
+    sal NUMBER,
+    deptno NUMBER
+);
+
+-- Create the Audit/Update table
+CREATE TABLE emp_update (
+    empno NUMBER,
+    raise_amount NUMBER,
+    update_date DATE
+);
+
+-- Insert sample data for Department 20
+INSERT INTO emp VALUES (7369, 'SMITH', 800, 20);
+INSERT INTO emp VALUES (7566, 'JONES', 2975, 20);
+INSERT INTO emp VALUES (7788, 'SCOTT', 3000, 20);
+COMMIT;
+
